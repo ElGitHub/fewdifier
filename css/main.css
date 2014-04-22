@@ -275,7 +275,7 @@ height:20px;
 /* Generic Container */
 .container {
     width: 100%;
-    height: auto;
+    height: 440px;
     margin:0;
     padding:0;
 }
@@ -314,7 +314,6 @@ height:20px;
 .slider li img {
     width: 100%;
     height: auto;
- /*   margin: 10px auto;*/
 
 }
 
@@ -390,9 +389,9 @@ height:20px;
  
 /* Example for media query: change number of items per row */
  
-@media screen and (max-width: 1190px) {
+/*@media screen and (max-width: 1190px) {
     .photo-grid li {
-        width: 20%; /* Fallback */
+        width: 20%; 
         width: -webkit-calc(100% / 3);
         width: calc(100% / 3);
     }
@@ -400,24 +399,24 @@ height:20px;
  
 @media screen and (max-width: 945px) {
     .photo-grid li {
-        width: 25%; /* Fallback */
+        width: 25%; 
         width: -webkit-calc(100% / 2);
         width: calc(100% / 2);
     }
-}
+}*/
  
 @media screen and (max-width: 660px) {
     .photo-grid li {
-        width: 33.3333333%; /* Fallback */
+        width: 33.3333333%; 
         width: -webkit-calc(100% / 2);
         width: calc(100% / 2);
     }
 
 }
  
-@media screen and (max-width: 400px) {
+/*@media screen and (max-width: 400px) {
     .photo-grid li {
-        width: 50%; /* Fallback */
+        width: 50%; 
         width: -webkit-calc(100% / 1);
         width: calc(100% / 1);
     }
@@ -427,7 +426,7 @@ height:20px;
     .photo-grid li {
         width: 100%;
     }
-}
+}*/
 
 
 .clearfix:before,
