@@ -1,5 +1,4 @@
   function unleashSlider(container, interval, fadeTime) { // overall slider function
-
       var element = container; // get the container element, turn into element var
 
       if(interval == null) {
