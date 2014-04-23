@@ -1,15 +1,14 @@
-  function unleashSlider(container, interval, fadeTime) { // overall slider function
+  function goSlider(container, interval, fadeTime) { // overall slider function
       var element = container; // get the container element, turn into element var
 
       if(interval == null) {
-        var interval = 5000; // set the interval between fades
+        var interval = 1000; // set the interval between fades
       }
         
       if(fadeTime == null) {
         var fadeTime = 500; // set the fade times
       }
-    
-
+  
       slideOut(element); // begin the slideOut process
     
     
@@ -38,17 +37,13 @@
           var $nextSlide = $(this).next(); // get next slide
 
           if ($nextSlide.length == 0) { // if end of slides
-
               $firstSlide = $(this).parent().find(">:first-child"); // "next slide" return to first child of the slideshow
-
               $firstSlide.fadeIn(fadeTime); // fade in the original slide
-
               slideOut($firstSlide, true); // now run the slideOut again setting looping to true
 
           } else {
               // if there is a next slide
               $nextSlide.fadeIn(fadeTime); // fade it in
-
               slideOut($nextSlide, true); // then run the fadeOut
 
           } // end else
@@ -62,6 +57,6 @@
 
 $(document).ready(function() {
 
-  unleashSlider('.slider', 3000, 500); // run the slider
+  goSlider('.slider', 1000, 500); // run the slider
   
 }); // end doc ready
